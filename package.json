@@ -1,0 +1,23 @@
+{
+  "name": "poc-json-2-csv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "./node_modules/.bin/http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiriana/poc-json-2-csv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiriana/poc-json-2-csv/issues"
+  },
+  "homepage": "https://github.com/tiriana/poc-json-2-csv#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
