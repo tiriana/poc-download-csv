@@ -2,5 +2,7 @@
 
 const elements = require("./elements");
 const log = require("./log");
+const gen = require("./gen");
 
-log("Log will appear here:");
+
+gen(20).map(log);
