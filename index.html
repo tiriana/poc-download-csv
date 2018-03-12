@@ -1,20 +1,35 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <title>JSON 2 CSV POC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>JSON 2 CSV POC</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.css"/>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet"">
 
 </head>
 
 <body>
 
-    <div id="main">
-        <pre id="console">
+    <div class="container">
+        <h3>Can I generate CSV in this browser?</h3>
+        <div class="row">
+            <div class="col">
+                <div id="main">
+                    <div id="form">
+                        <div>
+                            <textarea id="json" rows="5" cols="50"></textarea>
+                        </div>
+                        <button id="get-json-btn">Generate json</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <pre id="console"> </pre>
+            </div>
+        </div>
 
-        </pre>
     </div>
 
 
