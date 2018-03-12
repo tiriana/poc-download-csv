@@ -3,3 +3,8 @@ pre {
     max-width: 400px;
     overflow: auto;
 }
+
+textarea {
+    white-space: nowrap;
+    overflow: auto;
+}

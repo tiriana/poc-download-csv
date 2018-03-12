@@ -2,6 +2,8 @@
 
 const faker = require("faker");
 
+window.faker = faker;
+
 const gen = (rows = 0, fakerKey = "address") => {
     const data = [];
 
