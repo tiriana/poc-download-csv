@@ -1,6 +1,6 @@
 const { console: pre } = require("./elements");
 const log = (...args) => {
-    pre.textContent = (args + "\n" + pre.textContent).split("\n").slice(0, 4).join("\n");
+    pre.textContent = (args + "\n" + pre.textContent).split("\n").slice(0, 6).join("\n");
     console.log(...args);
 }
 
