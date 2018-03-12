@@ -330,8 +330,8 @@ elements.downloadCsv.addEventListener("click", () => {
     downloadCsv(elements.textarea.value, elements.filename.value);
 });
 
-elements.rows.value = 1000;
-elements.cols.value = 50;
+elements.rows.value = 100;
+elements.cols.value = 20;
 genData();
 
 },{"./downloadCsv":3,"./elements":4,"./gen":5,"./log":6,"filesize":2}]},{},[7]);

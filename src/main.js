@@ -31,6 +31,6 @@ elements.downloadCsv.addEventListener("click", () => {
     downloadCsv(elements.textarea.value, elements.filename.value);
 });
 
-elements.rows.value = 1000;
-elements.cols.value = 50;
+elements.rows.value = 100;
+elements.cols.value = 20;
 genData();
