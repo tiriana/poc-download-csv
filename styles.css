@@ -7,4 +7,5 @@ pre {
 textarea {
     white-space: nowrap;
     overflow: auto;
+    width: 100%;
 }

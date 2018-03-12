@@ -16,13 +16,6 @@
         <h3>Can I generate CSV in this browser?</h3>
         <div class="row">
             <div class="col">
-                <div id="main">
-                    <div id="form">
-                        <textarea id="json" rows="10" cols="50"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
                 <div>
                     <label for="rows">Number of rows</label>
                     <input id="rows"></input>
@@ -33,12 +26,19 @@
                 </div>
                 <button id="gen-data-btn">Generate data</button>
                 <button id="download-csv">Download CSV</button>
+            </div>
+            <div class="col">
                 <pre id="console"> </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <textarea id="json" rows="10"></textarea>
             </div>
         </div>
 
     </div>
 
 
-    <script src="script.js"></script>
+    <script src="dist/script.js"></script>
 </body>

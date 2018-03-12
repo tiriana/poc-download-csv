@@ -1,6 +1,9 @@
 "use strict";
 
+const log = require("./log");
+
 const blobCsv = (csvString, fileName) => {
+    log("triggering download using blob");
     var blob = new Blob([csvString]);
     if (window.navigator.msSaveOrOpenBlob)
         window.navigator.msSaveBlob(blob, fileName);
@@ -16,6 +19,7 @@ const blobCsv = (csvString, fileName) => {
 blobCsv.isSupported = () => !!window.Blob;
 
 const uriCsv = (csvString, fileName) => {
+    log("triggering download using encodeURI");
     const hiddenElement = document.createElement("a");
     hiddenElement.href = "data:text/csv;charset=utf-8," + encodeURI(csvString);
     hiddenElement.target = "_blank";
