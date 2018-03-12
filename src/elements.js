@@ -6,5 +6,6 @@ module.exports = {
     textarea: document.getElementById("json"),
     genData: document.getElementById("gen-data-btn"),
     downloadCsv: document.getElementById("download-csv"),
-    rows: document.getElementById("rows")
+    rows: document.getElementById("rows"),
+    filename: document.getElementById("filename")
 }
