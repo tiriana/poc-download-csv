@@ -1,4 +1,4 @@
-Just a POC to test browsers against generationg and triggering download of CSV's directly in browsers
+Test: generating and downloading CSV files directly from browser.
 
 Live:  
 https://tiriana.github.io/poc-download-csv/
