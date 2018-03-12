@@ -10,11 +10,12 @@ const genData = () => {
     elements.filename.value = "sampleFile_" + Date.now();
 
     const numOfRows = 0 | parseInt(elements.rows.value, 10);
+    const numOfCols = 0 | parseInt(elements.cols.value, 10);
 
-    log(`generating rows: ${numOfRows}. Please wait...`);
+    log(`generating rows: ${numOfRows}, cols: ${numOfCols}. Please wait...`);
 
     setTimeout(() => {
-        const data = gen(numOfRows);
+        const data = gen(numOfRows, numOfCols);
         const csv = data.map(row => `"${row.join('","')}"\n`).join("");
 
         elements.textarea.value = csv;
@@ -31,4 +32,5 @@ elements.downloadCsv.addEventListener("click", () => {
 });
 
 elements.rows.value = 1000;
+elements.cols.value = 50;
 genData();

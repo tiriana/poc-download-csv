@@ -1,16 +1,16 @@
 "use strict";
 
-const faker = require("faker");
+const { intToExcelCol } = require("excel-column-name");
 
-const gen = (rows = 0, fakerKey = "address") => {
+const gen = (rows = 0, cols = 50) => {
     const data = [];
 
-    const head = Object.keys(faker[fakerKey]);
+    const head = [...Array(cols)].map((v,i) => `Header ${i}`);
 
     data.push([...head]);
 
-    while(rows-- > 0) {
-        const fakeData = head.map(colHead => faker[fakerKey][colHead]());
+    for(let row = 1; row <= rows; row ++) {
+        const fakeData = head.map((h, i) => `${intToExcelCol(i + 1)}${row}`);
         data.push(fakeData);
     }
 
